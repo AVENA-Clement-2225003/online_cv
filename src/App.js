@@ -10,6 +10,7 @@ import Languages from "./pages/Languages";
 import IDEs from "./pages/IDEs";
 import Experiences from "./pages/Experiences";
 import NotFound from "./pages/NotFound";
+import Software from "./pages/Software";
 
 function App() {
     return (
@@ -20,8 +21,9 @@ function App() {
                     <Route path="projects" element={<Projects />} />
                     <Route path="languages" element={<Languages />} />
                     <Route path="ides" element={<IDEs />} />
-                    <Route path="expriences" element={<Experiences />} />
+                    <Route path="experiences" element={<Experiences />} />
                     <Route path="contact" element={<Contact />} />
+                    <Route path="software" element={<Software />} />
 
                     <Route path="/admin" element={<AdminLayout />}>
                         <Route path="admin" element={<Dashboard />} />

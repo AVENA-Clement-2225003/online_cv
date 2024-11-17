@@ -1,12 +1,13 @@
 import React from 'react';
 
 function Card({ image_name, name, type }) {
+    const isMiniCard = type === "";
     return (
-        <div class="card">
-            <img class="cardImg" alt={"Card informations"} src={`/${image_name}`}/>
+        <div className={`${isMiniCard ? 'mini' : ''} card`}>
+            <img className="cardImg" alt={"Card informations"} src={`/${image_name}`}/>
             <div>
-                <p class="cardName">{name}</p>
-                <p class="cardType">{type}</p>
+                <p className="cardName">{name}</p>
+                {isMiniCard ? '': <p className="cardType">{type}</p>}
             </div>
         </div>
     );

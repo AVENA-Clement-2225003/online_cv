@@ -27,7 +27,7 @@ h2 {
 
 h3 {
   font-family: Roboto, sans-serif;
-  font-size: 40px;
+  font-size: 46px;
   margin-bottom: 0.2em;
 }
 
@@ -95,6 +95,7 @@ p {
 
 header > nav {
   margin: 2em;
+  width: 1155px;
 }
 
 header > nav > ul {
@@ -120,6 +121,9 @@ header > nav > ul > li > a, header > nav > ul > li > a:visited {
 /************************Card************************/
 .cardHolder {
   display: flex;
+  overflow-x: auto;
+  padding-bottom: 0.4em;
+  scrollbar-color: #45b69c white;
 }
 
 .card {
@@ -157,6 +161,98 @@ header > nav > ul > li > a, header > nav > ul > li > a:visited {
   font-size: 32px;
   font-weight: lighter;
   font-style: italic;
+}
+
+.mini {
+  width: 251px;
+  height: 94px;
+}
+
+.mini > div {
+  height: 80px;
+}
+
+.mini > div > p {
+  font-size: 36px;
+}
+
+.mini > .cardImg{
+  width: 65px;
+  height: 65px;
+}
+
+/************************JobCard************************/
+
+.jobCard {
+  display: flex;
+  background-color: #EDECED;
+  border-radius: 30px;
+  padding: 1em 1.5em 1em 0.7em;
+  margin-right: 4em;
+}
+
+.jobCardImg {
+  width: 76px;
+  height: 76px;
+}
+
+.jobCardType {
+  writing-mode: vertical-lr;
+  rotate: 180deg;
+  text-align: center;
+  margin-right: 0.3em;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+  font-style: italic;
+  height: 86px;
+}
+
+.jobCardCompanyInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.jobCardCompanyInfo > div {
+  margin-left: 0.5em;
+}
+
+.jobCardName {
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.jobCardRole {
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.jobCardDateHolder {
+  padding-top: 0.4em;
+  border-top: 1px black solid;
+}
+
+.jobCardDateHolder > p {
+  text-align: center;
+}
+
+.jobCardDateHolder > .jobCardYear {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.jobCardDateHolder > .jobCardDuration {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: lighter;
 }
 
 /************************Footer************************/

@@ -10,8 +10,8 @@ function Languages() {
             <h3>Langages</h3>
             <div className="cardHolder">
                 <Card image_name={"php.png"} name={"PHP"} type={""}/>
-                <Card image_name={"logo192.png"} name={"C++"} type={""}/>
-                <Card image_name={"logo192.png"} name={"C#"} type={""}/>
+                <Card image_name={"cpp.png"} name={"C++"} type={""}/>
+                <Card image_name={"csharp.png"} name={"C#"} type={""}/>
                 <Card image_name={"python.png"} name={"Python"} type={""}/>
                 <Card image_name={"java.png"} name={"Java"} type={""}/>
                 <Card image_name={"js.png"} name={"Java script"} type={""}/>
@@ -19,9 +19,9 @@ function Languages() {
             <h3>FrameWork</h3>
             <div className="cardHolder">
                 <Card image_name={"laravel.png"} name={"Laravel"} type={""}/>
-                <Card image_name={"logo192.png"} name={".NET MAUI"} type={""}/>
-                <Card image_name={"logo192.png"} name={"ASPNET"} type={""}/>
-                <Card image_name={"logo192.png"} name={"FastAPI"} type={""}/>
+                <Card image_name={"dotnet.png"} name={".NET MAUI"} type={""}/>
+                <Card image_name={"aspnet.png"} name={"ASPNET"} type={""}/>
+                <Card image_name={"fastapi.png"} name={"FastAPI"} type={""}/>
                 <Card image_name={"logo192.png"} name={"ReactJS"} type={""}/>
             </div>
         </div>

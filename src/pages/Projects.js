@@ -9,20 +9,20 @@ function Projects() {
         <div>
             <h3>Projets scolaires</h3>
             <div className="cardHolder">
-                <Card image_name={"logo192.png"} name={"POLAPP"} type={".NET 8 MAUI"}/>
-                <Card image_name={"logo192.png"} name={"Inproto"} type={"Laravel 10"}/>
-                <Card image_name={"logo192.png"} name={"API Commande"} type={"Java"}/>
-                <Card image_name={"logo192.png"} name={"Holo"} type={"PHP"}/>
+                <Card image_name={"polapp.png"} name={"POLAPP"} type={".NET 8 MAUI"}/>
+                <Card image_name={"inproto.png"} name={"Inproto"} type={"Laravel 10"}/>
+                <Card image_name={"apicommande.png"} name={"API Commande"} type={"Java"}/>
+                <Card image_name={"holo.png"} name={"Holo"} type={"PHP"}/>
             </div>
             <h3>Projets personnels</h3>
             <div className="cardHolder">
                 <Card image_name={"logo192.png"} name={"Mon CV"} type={"ReactJS"}/>
-                <Card image_name={"logo192.png"} name={"ChiefPlanner"} type={"Laravel 11"}/>
+                <Card image_name={"chiefplanner.png"} name={"ChiefPlanner"} type={"Laravel 11"}/>
             </div>
             <h3>Projets professionnels</h3>
             <div className="cardHolder">
-                <Card image_name={"logo192.png"} name={"AWS ARAPL"} type={"ASPNET"}/>
-                <Card image_name={"logo192.png"} name={"Sensia PPTX converter"} type={"FastAPI Python"}/>
+                <Card image_name={"awsarapl.png"} name={"AWS ARAPL"} type={"ASPNET"}/>
+                <Card image_name={"sensiapptxconverter.png"} name={"Sensia PPTX converter"} type={"FastAPI Python"}/>
             </div>
 
         </div>

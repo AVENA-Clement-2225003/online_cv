@@ -9,20 +9,23 @@ function Home() {
         <div>
             <h3>Web & code</h3>
             <div className="cardHolder">
-                <Card image_name={"logo192.png"} name={"PhpMyAdmin"} type={" "}/>
-                <Card image_name={"logo192.png"} name={"Wamp"} type={" "}/>
-                <Card image_name={"logo192.png"} name={"DB Browser"} type={"SQLite"}/>
+                <Card image_name={"phpmyadmin.png"} name={"PhpMyAdmin"} type={" "}/>
+                <Card image_name={"wamp.png"} name={"Wamp"} type={" "}/>
+                <Card image_name={"looping.png"} name={"Looping"} type={" "}/>
+                <Card image_name={"dbbrowser.png"} name={"DB Browser"} type={"SQLite"}/>
             </div>
             <h3>Bureautique</h3>
             <div className="cardHolder">
                 <Card image_name={"word.png"} name={"Word"} type={"Office"}/>
                 <Card image_name={"excel.png"} name={"Excel"} type={"Office"}/>
                 <Card image_name={"powerpoint.png"} name={"Powerpoint"} type={"Office"}/>
+                <Card image_name={"notion.png"} name={"Notion"} type={" "}/>
+                <Card image_name={"staruml.png"} name={"StarUML"} type={" "}/>
             </div>
             <h3>Multimédia</h3>
             <div className="cardHolder">
                 <Card image_name={"photoshop.png"} name={"Photoshop"} type={"Adobe"}/>
-                <Card image_name={"logo192.png"} name={"Filmora"} type={"Wondershare"}/>
+                <Card image_name={"filmora.png"} name={"Filmora"} type={"Wondershare"}/>
             </div>
             <h3>3D</h3>
             <div className="cardHolder">

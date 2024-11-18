@@ -126,6 +126,15 @@ header > nav > ul > li > a, header > nav > ul > li > a:visited {
   scrollbar-color: #45b69c white;
 }
 
+.gridDisplay {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gridDisplay > .card {
+  margin: 1em;
+}
+
 .card {
   display: flex;
   width: 418px;

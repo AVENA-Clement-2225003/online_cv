@@ -24,6 +24,13 @@ function Languages() {
                 <Card image_name={"fastapi.png"} name={"FastAPI"} type={""}/>
                 <Card image_name={"logo192.png"} name={"ReactJS"} type={""}/>
             </div>
+            <h3>DB et données</h3>
+            <div className="cardHolder">
+                <Card image_name={"logo512.png"} name={"SQL"} type={""}/>
+                <Card image_name={"logo512.png"} name={"PL/SQL"} type={""}/>
+                <Card image_name={"logo512.png"} name={"Mongo DB"} type={""}/>
+                <Card image_name={"logo512.png"} name={"JSON"} type={""}/>
+            </div>
         </div>
     );
 }

@@ -192,12 +192,18 @@ header > nav > ul > li > a, header > nav > ul > li > a:visited {
 
 /************************JobCard************************/
 
+.experiences {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .jobCard {
   display: flex;
   background-color: #EDECED;
   border-radius: 30px;
   padding: 1em 1.5em 1em 0.7em;
   margin-right: 4em;
+  margin-bottom: 1em;
 }
 
 .jobCardImg {

@@ -17,6 +17,7 @@ function IDEs() {
                 <Card image_name={"pycharm.png"} name={"PyCharm"} type={"Jet Brain"}/>
                 <Card image_name={"qtcreator.png"} name={"Qt Creator"} type={"Qt Group"}/>
                 <Card image_name={"eclipse.png"} name={"Eclipse"} type={"Eclipse Foundation"}/>
+                <Card image_name={"logo512.png"} name={"Jupyter notebook"} type={"Jupyter"}/>
             </div>
         </div>
     );

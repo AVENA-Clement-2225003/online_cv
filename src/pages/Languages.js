@@ -26,10 +26,10 @@ function Languages() {
             </div>
             <h3>DB et données</h3>
             <div className="cardHolder">
-                <Card image_name={"logo512.png"} name={"SQL"} type={""}/>
+                <Card image_name={"sql.png"} name={"SQL"} type={""}/>
                 <Card image_name={"logo512.png"} name={"PL/SQL"} type={""}/>
-                <Card image_name={"logo512.png"} name={"Mongo DB"} type={""}/>
-                <Card image_name={"logo512.png"} name={"JSON"} type={""}/>
+                <Card image_name={"mongodb.png"} name={"Mongo DB"} type={""}/>
+                <Card image_name={"json.png"} name={"JSON"} type={""}/>
             </div>
         </div>
     );

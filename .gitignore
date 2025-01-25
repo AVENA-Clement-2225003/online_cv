@@ -1,0 +1,9 @@
+# Ignore Node.js dependencies
+frontend/node_modules/
+
+# Ignore .NET build artifacts
+backend/bin/
+backend/obj/
+
+# Ignore environment files
+*.env

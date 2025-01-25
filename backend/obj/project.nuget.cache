@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "C9i0h9oa7k4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mikado\\WebstormProjects\\online_cv\\backend\\backend\\backend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mikado\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\Mikado\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

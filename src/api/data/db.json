@@ -1,0 +1,359 @@
+{
+  "profile": {
+    "name": "John Doe",
+    "title": "Senior Software Engineer",
+    "summary": "I'm a passionate software engineer with a love for creating elegant solutions to complex problems. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in continuous learning and staying current with industry trends while maintaining a healthy work-life balance.",
+    "about": "My journey in technology started with a curiosity about how things work, which evolved into a career building software that makes a difference. I'm particularly interested in creating accessible and user-friendly applications that solve real-world problems.",
+    "tagline": "Fueled by coffee and passion for code",
+    "email": "john@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "San Francisco, CA",
+    "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/johndoe",
+      "github": "https://github.com/johndoe",
+      "twitter": "https://twitter.com/johndoe"
+    }
+  },
+  "programmingLanguages": [
+    {
+      "id": 1,
+      "name": "JavaScript/TypeScript",
+      "level": "Expert",
+      "description": "Modern ES6+, TypeScript, React, Node.js",
+      "experience": "5+ years",
+      "projects": "Web applications, APIs, Full-stack development"
+    },
+    {
+      "id": 2,
+      "name": "Python",
+      "level": "Advanced",
+      "description": "Django, Flask, Data Science",
+      "experience": "4 years",
+      "projects": "Backend services, Data analysis, Machine learning"
+    },
+    {
+      "id": 3,
+      "name": "Java",
+      "level": "Intermediate",
+      "description": "Spring Boot, Android Development",
+      "experience": "3 years",
+      "projects": "Enterprise applications, Mobile apps"
+    },
+    {
+      "id": 4,
+      "name": "C++",
+      "level": "Intermediate",
+      "description": "System Programming, Game Development",
+      "experience": "2 years",
+      "projects": "Game engines, System utilities"
+    }
+  ],
+  "developmentTools": [
+    {
+      "id": 1,
+      "name": "Version Control",
+      "tools": ["Git", "GitHub", "GitLab", "Bitbucket"],
+      "experience": "Advanced",
+      "description": "Expert in version control workflows, branching strategies, and collaboration"
+    },
+    {
+      "id": 2,
+      "name": "CI/CD",
+      "tools": ["Jenkins", "GitHub Actions", "GitLab CI", "CircleCI"],
+      "experience": "Advanced",
+      "description": "Automated testing, deployment, and release management"
+    },
+    {
+      "id": 3,
+      "name": "Containerization",
+      "tools": ["Docker", "Kubernetes", "Docker Compose"],
+      "experience": "Intermediate",
+      "description": "Container orchestration and microservices deployment"
+    },
+    {
+      "id": 4,
+      "name": "Testing",
+      "tools": ["Jest", "Cypress", "Selenium", "JUnit"],
+      "experience": "Advanced",
+      "description": "Unit testing, integration testing, and end-to-end testing"
+    }
+  ],
+  "ides": [
+    {
+      "id": 1,
+      "name": "Visual Studio Code",
+      "type": "General Purpose",
+      "experience": "Expert",
+      "features": [
+        "Custom extensions",
+        "Git integration",
+        "Debugging tools",
+        "Remote development"
+      ],
+      "description": "Primary IDE for web development and general programming"
+    },
+    {
+      "id": 2,
+      "name": "IntelliJ IDEA",
+      "type": "Java Development",
+      "experience": "Advanced",
+      "features": [
+        "Smart code completion",
+        "Framework support",
+        "Database tools",
+        "Build tools integration"
+      ],
+      "description": "Preferred IDE for Java and Spring Boot development"
+    },
+    {
+      "id": 3,
+      "name": "PyCharm",
+      "type": "Python Development",
+      "experience": "Advanced",
+      "features": [
+        "Scientific tools",
+        "Web frameworks support",
+        "Remote interpreters",
+        "Database tools"
+      ],
+      "description": "Specialized IDE for Python development and data science"
+    },
+    {
+      "id": 4,
+      "name": "Android Studio",
+      "type": "Mobile Development",
+      "experience": "Intermediate",
+      "features": [
+        "UI designer",
+        "Performance tools",
+        "Device emulation",
+        "Gradle support"
+      ],
+      "description": "Complete IDE for Android app development"
+    }
+  ],
+  "software": [
+    {
+      "id": 1,
+      "category": "Content Creation",
+      "items": [
+        {
+          "id": 1,
+          "name": "Adobe Photoshop",
+          "purpose": "Image editing and graphic design",
+          "experience": "Advanced"
+        },
+        {
+          "id": 2,
+          "name": "Filmora",
+          "purpose": "Video editing and production",
+          "experience": "Intermediate"
+        },
+        {
+          "id": 3,
+          "name": "OBS Studio",
+          "purpose": "Screen recording and streaming",
+          "experience": "Advanced"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "3D Modeling & Design",
+      "items": [
+        {
+          "id": 1,
+          "name": "Blender",
+          "purpose": "3D modeling and animation",
+          "experience": "Intermediate"
+        },
+        {
+          "id": 2,
+          "name": "SketchUp",
+          "purpose": "Architectural visualization",
+          "experience": "Advanced"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Office & Productivity",
+      "items": [
+        {
+          "id": 1,
+          "name": "Microsoft Office Suite",
+          "purpose": "Document processing and presentations",
+          "experience": "Expert"
+        },
+        {
+          "id": 2,
+          "name": "Notion",
+          "purpose": "Note-taking and project management",
+          "experience": "Advanced"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Database Management",
+      "items": [
+        {
+          "id": 1,
+          "name": "MySQL Workbench",
+          "purpose": "Database design and management",
+          "experience": "Advanced"
+        },
+        {
+          "id": 2,
+          "name": "DBeaver",
+          "purpose": "Universal database tool",
+          "experience": "Intermediate"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Tech Solutions Inc.",
+      "position": "Senior Developer",
+      "startDate": "2020-01",
+      "endDate": "Present",
+      "description": "Led development of multiple web applications using React and Node.js",
+      "achievements": [
+        "Improved application performance by 40%",
+        "Implemented CI/CD pipeline",
+        "Mentored junior developers"
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Digital Innovations",
+      "position": "Web Developer",
+      "startDate": "2017-03",
+      "endDate": "2019-12",
+      "description": "Developed and maintained client websites",
+      "achievements": [
+        "Created responsive designs for 20+ clients",
+        "Integrated payment processing systems",
+        "Optimized database queries"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "University of Technology",
+      "degree": "Bachelor of Science in Computer Science",
+      "startDate": "2013-09",
+      "endDate": "2017-05",
+      "description": "Graduated with honors. Focused on software engineering and web development."
+    }
+  ],
+  "hobbies": [
+    {
+      "id": 1,
+      "name": "Photography",
+      "icon": "Camera",
+      "description": "Capturing moments and exploring urban landscapes through street photography."
+    },
+    {
+      "id": 2,
+      "name": "Gaming",
+      "icon": "Gamepad2",
+      "description": "Enthusiast of strategy games and RPGs, particularly enjoying world-building games."
+    },
+    {
+      "id": 3,
+      "name": "Reading",
+      "icon": "Book",
+      "description": "Science fiction and technical books, always expanding knowledge and imagination."
+    },
+    {
+      "id": 4,
+      "name": "Traveling",
+      "icon": "Plane",
+      "description": "Exploring new cultures and places, documenting experiences through photography."
+    }
+  ],
+  "projects": {
+    "personal": [
+      {
+        "id": 1,
+        "title": "Task Management App",
+        "description": "A React-based task management application with real-time updates and collaborative features.",
+        "technologies": ["React", "Firebase", "Tailwind CSS"],
+        "github": "https://github.com/yourusername/task-app",
+        "demo": "https://task-app-demo.com",
+        "image": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&h=400"
+      },
+      {
+        "id": 2,
+        "title": "Weather Dashboard",
+        "description": "Real-time weather monitoring dashboard with interactive maps and forecasting.",
+        "technologies": ["Vue.js", "OpenWeather API", "D3.js"],
+        "github": "https://github.com/yourusername/weather-dashboard",
+        "demo": "https://weather-dashboard-demo.com",
+        "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&h=400"
+      }
+    ],
+    "professional": [
+      {
+        "id": 1,
+        "title": "E-commerce Platform",
+        "description": "A full-stack e-commerce application with payment processing",
+        "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&h=400"
+      },
+      {
+        "id": 2,
+        "title": "Healthcare Management System",
+        "description": "A comprehensive system for managing patient records and appointments",
+        "technologies": ["Angular", "Spring Boot", "PostgreSQL"],
+        "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&h=400"
+      }
+    ],
+    "academic": [
+      {
+        "id": 1,
+        "title": "Machine Learning Research",
+        "description": "Research on neural networks for image recognition",
+        "technologies": ["Python", "TensorFlow", "Jupyter Notebook"],
+        "paper": "https://example.com/research-paper",
+        "image": "https://images.unsplash.com/photo-1527474305487-b87b222841cc?auto=format&fit=crop&w=800&h=400"
+      },
+      {
+        "id": 2,
+        "title": "Database Optimization Study",
+        "description": "Research on query optimization techniques for large datasets",
+        "technologies": ["SQL", "PostgreSQL", "Python"],
+        "paper": "https://example.com/database-paper",
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&h=400"
+      }
+    ]
+  },
+  "certificates": [
+    {
+      "id": 1,
+      "name": "AWS Certified Developer",
+      "issuer": "Amazon Web Services",
+      "date": "2022-06",
+      "url": "https://aws.amazon.com/certification/certified-developer"
+    },
+    {
+      "id": 2,
+      "name": "React Certification",
+      "issuer": "Meta",
+      "date": "2021-03",
+      "url": "https://reactjs.org/certification"
+    }
+  ],
+  "contact": {
+    "email": "john@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "San Francisco, CA",
+    "availability": "Open to new opportunities",
+    "preferredContact": "email"
+  }
+}

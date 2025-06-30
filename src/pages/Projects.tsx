@@ -3,16 +3,18 @@ import { Code2, Briefcase, GraduationCap } from 'lucide-react'
 import PersonalProjects from './PersonalProjects.tsx'
 import ProfessionalProjects from './ProfessionalProjects.tsx'
 import AcademicProjects from './AcademicProjects.tsx'
+import { useLanguage } from '../context/LanguageContext'
 
 type ProjectType = 'personal' | 'professional' | 'academic'
 
 function Projects() {
   const [selectedType, setSelectedType] = useState<ProjectType>('personal')
+  const { t } = useLanguage()
 
   const projectTypes = [
-    { type: 'personal', label: 'Personal', icon: <Code2 />, color: '#45B69C' },
-    { type: 'professional', label: 'Professional', icon: <Briefcase />, color: '#8B5CF6' },
-    { type: 'academic', label: 'Academic', icon: <GraduationCap />, color: '#3B82F6' },
+    { type: 'personal', label: t('projects.personal'), icon: <Code2 />, color: '#45B69C' },
+    { type: 'professional', label: t('projects.professional'), icon: <Briefcase />, color: '#8B5CF6' },
+    { type: 'academic', label: t('projects.academic'), icon: <GraduationCap />, color: '#3B82F6' },
   ]
 
   return (

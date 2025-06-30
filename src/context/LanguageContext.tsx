@@ -49,6 +49,9 @@ const translations: Record<Language, Record<string, string>> = {
     // Home page
     'home.about': 'About Me',
     'home.hobbies': 'Hobbies & Interests',
+    'home.education': 'Education',
+    'home.education.date': '{0} - {1}',
+    'home.education.present': 'Present',
   },
   fr: {
     // General
@@ -84,6 +87,9 @@ const translations: Record<Language, Record<string, string>> = {
     // Home page
     'home.about': 'À Propos de Moi',
     'home.hobbies': 'Loisirs & Intérêts',
+    'home.education': 'Formation',
+    'home.education.date': '{0} - {1}',
+    'home.education.present': 'Présent',
   },
 };
 

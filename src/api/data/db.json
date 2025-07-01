@@ -2,8 +2,8 @@
   "profile": {
     "name": "Clément AVENA",
     "title": {
-      "en": "Junior Software Engineer",
-      "fr": "Ingénieur Logiciel Junior"
+      "en": "Junior Full Stack Engineer",
+      "fr": "Ingénieur Full Stack Junior"
     },
     "summary": {
       "en": "I'm a passionate software engineer with a love for creating elegant solutions to complex problems. When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in continuous learning and staying current with industry trends while maintaining a healthy work-life balance.",
@@ -148,78 +148,126 @@
   "software": [
     {
       "id": 1,
-      "category": "Content Creation",
+      "category": {
+        "en": "Content Creation",
+        "fr": "Création de Contenu"
+      },
       "items": [
         {
           "id": 1,
           "name": "Adobe Photoshop",
-          "purpose": "Image editing and graphic design",
+          "purpose": {
+            "en": "Image editing and graphic design",
+            "fr": "Édition d'images et conception graphique"
+          },
           "experience": "Advanced"
         },
         {
           "id": 2,
           "name": "Filmora",
-          "purpose": "Video editing and production",
+          "purpose": {
+            "en": "Video editing and production",
+            "fr": "Montage et production vidéo"
+          },
           "experience": "Intermediate"
         },
         {
           "id": 3,
           "name": "OBS Studio",
-          "purpose": "Screen recording and streaming",
+          "purpose": {
+            "en": "Screen recording and streaming",
+            "fr": "Enregistrement d'écran et streaming"
+          },
           "experience": "Advanced"
         }
       ]
     },
     {
       "id": 2,
-      "category": "3D Modeling & Design",
+      "category": {
+        "en": "3D Modeling & Design",
+        "fr": "Modélisation 3D & Design"
+      },
       "items": [
         {
           "id": 1,
           "name": "Blender",
-          "purpose": "3D modeling and animation",
+          "purpose": {
+            "en": "3D modeling and animation",
+            "fr": "Modélisation 3D et animation"
+          },
           "experience": "Intermediate"
         },
         {
           "id": 2,
           "name": "SketchUp",
-          "purpose": "Architectural visualization",
+          "purpose": {
+            "en": "Architectural visualization",
+            "fr": "Visualisation architecturale"
+          },
           "experience": "Advanced"
+        },
+        {
+          "id": 3,
+          "name": "Figma",
+          "purpose": {
+            "en": "UI/UX design",
+            "fr": "Conception UI/UX"
+          },
+          "experience": "Intermediate"
         }
       ]
     },
     {
       "id": 3,
-      "category": "Office & Productivity",
+      "category": {
+        "en": "Office & Productivity",
+        "fr": "Bureautique & Productivité"
+      },
       "items": [
         {
           "id": 1,
           "name": "Microsoft Office Suite",
-          "purpose": "Document processing and presentations",
+          "purpose": {
+            "en": "Document processing and presentations",
+            "fr": "Traitement de documents et présentations"
+          },
           "experience": "Expert"
         },
         {
           "id": 2,
           "name": "Notion",
-          "purpose": "Note-taking and project management",
+          "purpose": {
+            "en": "Note-taking and project management",
+            "fr": "Prise de notes et gestion de projets"
+          },
           "experience": "Advanced"
         }
       ]
     },
     {
       "id": 4,
-      "category": "Database Management",
+      "category": {
+        "en": "Database Management",
+        "fr": "Gestion de Bases de Données"
+      },
       "items": [
         {
           "id": 1,
           "name": "MySQL",
-          "purpose": "Database design and management",
+          "purpose": {
+            "en": "Database design and management",
+            "fr": "Conception et gestion de bases de données"
+          },
           "experience": "Advanced"
         },
         {
           "id": 2,
           "name": "PhpMyAdmin",
-          "purpose": "Database tool",
+          "purpose": {
+            "en": "Database tool",
+            "fr": "Outil de base de données"
+          },
           "experience": "Advanced"
         }
       ]

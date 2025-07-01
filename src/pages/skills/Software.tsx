@@ -48,8 +48,10 @@ function Software() {
       {!loading && !error && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {softwareCategories.map((category) => (
-            <div key={category.category} className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-xl font-bold text-[#45B69C] mb-4">{category.category}</h2>
+            <div key={typeof category.category === 'object' ? JSON.stringify(category.category) : category.category} className="bg-white rounded-lg shadow-md p-6">
+              <h2 className="text-xl font-bold text-[#45B69C] mb-4">
+                {typeof category.category === 'object' ? category.category[useLanguage().language] : category.category}
+              </h2>
               <div className="space-y-4">
                 {category.items.map((software) => (
                   <div key={software.name} className="border-l-4 border-[#45B69C] pl-4">
@@ -59,7 +61,9 @@ function Software() {
                         {software.experience}
                       </span>
                     </div>
-                    <p className="text-gray-600 text-sm mt-1">{software.purpose}</p>
+                    <p className="text-gray-600 text-sm mt-1">
+                      {typeof software.purpose === 'object' ? software.purpose[useLanguage().language] : software.purpose}
+                    </p>
                   </div>
                 ))}
               </div>

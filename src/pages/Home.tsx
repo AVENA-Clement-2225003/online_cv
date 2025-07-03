@@ -73,7 +73,7 @@ function Home() {
     return (
       <div className="max-w-7xl mx-auto px-4 py-8 md:py-12 flex justify-center items-center h-64">
         <Loader2 className="w-8 h-8 text-[#45B69C] animate-spin" />
-        <span className="ml-2 text-gray-600">{t('label.loading')}</span>
+        <span className="ml-2 text-gray-600 dark:text-gray-300">{t('label.loading')}</span>
       </div>
     )
   }
@@ -81,7 +81,7 @@ function Home() {
   if (error || !profile) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
-        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md">
+        <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 px-4 py-3 rounded-md">
           <p>{error || 'Failed to load profile data'}</p>
         </div>
       </div>
@@ -96,11 +96,11 @@ function Home() {
           alt={profile.name}
           className="w-32 h-32 rounded-full mx-auto mb-4 object-cover ring-4 ring-[#45B69C] ring-opacity-50"
         />
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{profile.name}</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-dark-primary mb-2">{profile.name}</h1>
         <p className="text-lg md:text-xl text-[#45B69C] mb-4">
           {typeof profile.title === 'object' ? profile.title[language] : profile.title}
         </p>
-        <div className="flex items-center justify-center gap-2 text-gray-600">
+        <div className="flex items-center justify-center gap-2 text-gray-600 dark:text-gray-300">
           <Coffee className="w-5 h-5" />
           <span>
             {typeof profile.tagline === 'object' ? profile.tagline[language] : profile.tagline}
@@ -108,66 +108,66 @@ function Home() {
         </div>
       </div>
 
-      <div className="bg-white p-6 md:p-8 rounded-lg shadow-md mb-8">
+      <div className="bg-white dark:bg-dark-card p-6 md:p-8 rounded-lg shadow-md mb-8 transition-colors duration-200">
         <h2 className="text-2xl font-bold mb-4 text-[#45B69C] flex items-center gap-2">
           <Heart className="w-6 h-6" />
           {t('home.about')}
         </h2>
-        <p className="text-gray-600 leading-relaxed mb-6">
+        <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
           {typeof profile.summary === 'object' ? profile.summary[language] : profile.summary}
         </p>
-        <p className="text-gray-600 leading-relaxed">
+        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
           {typeof profile.about === 'object' ? profile.about[language] : profile.about}
         </p>
       </div>
       
-      <div className="bg-white p-6 md:p-8 rounded-lg shadow-md mb-8">
+      <div className="bg-white dark:bg-dark-card p-6 md:p-8 rounded-lg shadow-md mb-8 transition-colors duration-200">
         <h2 className="text-2xl font-bold mb-6 text-[#45B69C] flex items-center gap-2">
           <GraduationCap className="w-6 h-6" />
           {t('home.education')}
         </h2>
         <div className="relative">
           <div className="overflow-x-auto pb-4 hide-scrollbar">
-            <div className="flex space-x-6" style={{ minWidth: 'max-content' }}>
+            <div className="flex space-x-6 pl-4" style={{ minWidth: 'max-content' }}>
               {education.map((edu) => (
                 <div 
                   key={edu.id} 
-                  className="bg-gray-50 p-5 rounded-lg shadow-sm min-w-[300px] max-w-[350px] flex flex-col"
+                  className="bg-gray-50 dark:bg-dark p-5 rounded-lg shadow-sm min-w-[300px] max-w-[350px] flex flex-col transition-colors duration-200"
                 >
-                  <h3 className="font-bold text-gray-800 mb-1">
+                  <h3 className="font-bold text-gray-800 dark:text-dark-primary mb-1">
                     {typeof edu.institution === 'object' ? edu.institution[language] : edu.institution}
                   </h3>
                   <p className="text-[#45B69C] font-medium mb-2">
                     {typeof edu.degree === 'object' ? edu.degree[language] : edu.degree}
                   </p>
-                  <p className="text-sm text-gray-500 mb-3">
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
                     {edu.startDate} - {edu.endDate === 'Present' ? t('home.education.present') : edu.endDate}
                   </p>
-                  <p className="text-gray-600 text-sm mt-auto">
+                  <p className="text-gray-600 dark:text-gray-300 text-sm mt-auto">
                     {typeof edu.description === 'object' ? edu.description[language] : edu.description}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+          {/* Left shade removed to only show when scrolled
+          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white dark:from-dark-card to-transparent pointer-events-none"></div> */}
         </div>
       </div>
 
-      <div className="bg-white p-6 md:p-8 rounded-lg shadow-md">
+      <div className="bg-white dark:bg-dark-card p-6 md:p-8 rounded-lg shadow-md transition-colors duration-200">
         <h2 className="text-2xl font-bold mb-6 text-[#45B69C]">{t('home.hobbies')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {hobbies.map((hobby) => (
-            <div key={hobby.id} className="flex items-start gap-4 p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
-              <div className="p-3 bg-white rounded-lg shadow-sm">
+            <div key={hobby.id} className="flex items-start gap-4 p-4 rounded-lg bg-gray-50 dark:bg-dark/80 hover:bg-gray-100 dark:hover:bg-dark-card transition-colors">
+              <div className="p-3 bg-white dark:bg-dark-card rounded-lg shadow-sm">
                 {getIconComponent(hobby.icon)}
               </div>
               <div>
-                <h3 className="font-bold text-gray-800 mb-1">
+                <h3 className="font-bold text-gray-800 dark:text-dark-primary mb-1">
                   {typeof hobby.name === 'object' ? hobby.name[language] : hobby.name}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
                   {typeof hobby.description === 'object' ? hobby.description[language] : hobby.description}
                 </p>
               </div>

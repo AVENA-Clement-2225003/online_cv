@@ -40,7 +40,7 @@ function ProgrammingLanguages() {
       )}
 
       {error && (
-        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md mb-6">
+        <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 px-4 py-3 rounded-md mb-6">
           <p>{error}</p>
         </div>
       )}
@@ -48,17 +48,17 @@ function ProgrammingLanguages() {
       {!loading && !error && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {languages.map((lang) => (
-            <div key={lang.name} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+            <div key={lang.name} className="bg-white dark:bg-dark-card rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
               <div className="flex justify-between items-start mb-4">
                 <h2 className="text-xl font-bold text-[#45B69C]">{lang.name}</h2>
                 <span className="px-3 py-1 bg-[#45B69C] bg-opacity-10 text-[#45B69C] rounded-full text-sm">
                   {typeof lang.level === 'object' ? lang.level[currentLanguage] : lang.level}
                 </span>
               </div>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
                 {typeof lang.description === 'object' ? lang.description[currentLanguage] : lang.description}
               </p>
-              <div className="flex justify-between text-sm text-gray-500">
+              <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
                 <span>{t('label.experience')}: {lang.experience}</span>
                 <span>{t('label.projects')}: {typeof lang.projects === 'object' ? lang.projects[currentLanguage] : lang.projects}</span>
               </div>

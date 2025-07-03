@@ -86,18 +86,18 @@ const Contact = () => {
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl font-bold text-[#45B69C] mb-8 text-center">{t('nav.contact')}</h1>
         
-        <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-6 md:mb-8">
+        <div className="bg-white dark:bg-dark-card rounded-lg shadow-md p-6 md:p-8 mb-6 md:mb-8 transition-colors duration-200">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {contactInfo.map((item) => (
               <div key={item.text} className="flex items-center space-x-3">
                 <div className="text-[#45B69C]">{item.icon}</div>
-                <span className="text-gray-600">{item.text}</span>
+                <span className="text-gray-600 dark:text-gray-300">{item.text}</span>
               </div>
             ))}
           </div>
           {contactData.availability && (
-            <div className="mt-6 pt-6 border-t border-gray-100 text-center">
-              <p className="text-gray-600">
+            <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700 text-center">
+              <p className="text-gray-600 dark:text-gray-300">
                 <span className="font-medium">{t('contactData.availability')}:</span> {
                   typeof contactData.availability === 'object' 
                     ? contactData.availability[language] 
@@ -108,7 +108,7 @@ const Contact = () => {
           )}
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-6 md:p-8">
+        <div className="bg-white dark:bg-dark-card rounded-lg shadow-md p-6 md:p-8 transition-colors duration-200">
           <h2 className="text-2xl font-bold mb-6 text-center text-[#45B69C]">{t('contact.connect')}</h2>
           <div className="flex flex-wrap justify-center gap-8">
             {socialLinks.map((link) => (
@@ -117,7 +117,7 @@ const Contact = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center space-y-2 text-gray-600 hover:text-[#45B69C] transition-colors"
+                className="flex flex-col items-center space-y-2 text-gray-600 dark:text-gray-300 hover:text-[#45B69C] transition-colors"
               >
                 {link.icon}
                 <span>{link.name}</span>

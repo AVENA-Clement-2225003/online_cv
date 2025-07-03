@@ -37,7 +37,7 @@ const AcademicProjects = () => {
   if (error || !projects.length) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md">
+        <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 px-4 py-3 rounded-md">
           <p>{error || 'No academic projects found'}</p>
         </div>
       </div>
@@ -51,7 +51,7 @@ const AcademicProjects = () => {
       <h1 className="text-3xl font-bold text-blue-500 mb-8">{t('projects.academic')}</h1>
       <div className="grid md:grid-cols-2 gap-8">
         {projects.map((project) => (
-          <div key={project.id} className="bg-white rounded-lg shadow-md p-6">
+          <div key={project.id} className="bg-white dark:bg-dark-card rounded-lg shadow-md p-6 transition-colors duration-200">
             <div className="flex items-center mb-4">
               {project.type === 'Research' ? (
                 <BookOpen className="w-6 h-6 text-blue-500 mr-2" />
@@ -64,18 +64,18 @@ const AcademicProjects = () => {
             </div>
             <div className="flex items-center mb-4">
               <Award className="w-5 h-5 text-gray-500 mr-2" />
-              <span className="text-gray-600">
+              <span className="text-gray-600 dark:text-gray-300">
                 {typeof project.institution === 'object' ? project.institution[language] : project.institution} • {project.year}
               </span>
             </div>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
               {typeof project.description === 'object' ? project.description[language] : project.description}
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               {project.technologies.map((tech: string) => (
                 <span
                   key={tech}
-                  className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-sm"
                 >
                   {tech}
                 </span>

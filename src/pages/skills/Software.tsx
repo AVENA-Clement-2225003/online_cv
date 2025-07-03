@@ -35,12 +35,12 @@ function Software() {
       {loading && (
         <div className="flex justify-center items-center py-12">
           <Loader2 className="w-8 h-8 text-[#45B69C] animate-spin" />
-          <span className="ml-2 text-gray-600">{t('label.loading')}</span>
+          <span className="ml-2 text-gray-600 dark:text-gray-300">{t('label.loading')}</span>
         </div>
       )}
 
       {error && (
-        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md mb-6">
+        <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 px-4 py-3 rounded-md mb-6">
           <p>{error}</p>
         </div>
       )}
@@ -48,7 +48,7 @@ function Software() {
       {!loading && !error && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {softwareCategories.map((category) => (
-            <div key={typeof category.category === 'object' ? JSON.stringify(category.category) : category.category} className="bg-white rounded-lg shadow-md p-6">
+            <div key={typeof category.category === 'object' ? JSON.stringify(category.category) : category.category} className="bg-white dark:bg-dark-card rounded-lg shadow-md p-6 transition-colors duration-200">
               <h2 className="text-xl font-bold text-[#45B69C] mb-4">
                 {typeof category.category === 'object' ? category.category[useLanguage().language] : category.category}
               </h2>
@@ -56,12 +56,12 @@ function Software() {
                 {category.items.map((software) => (
                   <div key={software.name} className="border-l-4 border-[#45B69C] pl-4">
                     <div className="flex justify-between items-start">
-                      <h3 className="font-semibold text-gray-800">{software.name}</h3>
+                      <h3 className="font-semibold text-gray-800 dark:text-dark-primary">{software.name}</h3>
                       <span className="px-3 py-1 bg-[#45B69C] bg-opacity-10 text-[#45B69C] rounded-full text-sm">
                         {software.experience}
                       </span>
                     </div>
-                    <p className="text-gray-600 text-sm mt-1">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm mt-1">
                       {typeof software.purpose === 'object' ? software.purpose[useLanguage().language] : software.purpose}
                     </p>
                   </div>

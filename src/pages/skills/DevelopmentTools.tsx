@@ -40,7 +40,7 @@ function DevelopmentTools() {
       )}
 
       {error && (
-        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md mb-6">
+        <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 px-4 py-3 rounded-md mb-6">
           <p>{error}</p>
         </div>
       )}
@@ -48,7 +48,7 @@ function DevelopmentTools() {
       {!loading && !error && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {tools.map((category) => (
-            <div key={category.name} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+            <div key={category.name} className="bg-white dark:bg-dark-card rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow transition-colors duration-200">
               <div className="flex justify-between items-start mb-4">
                 <h2 className="text-xl font-bold text-[#45B69C]">
                   {typeof category.name === 'object' ? category.name[language] : category.name}
@@ -61,13 +61,13 @@ function DevelopmentTools() {
                 {category.tools.map((tool) => (
                   <span
                     key={tool}
-                    className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
+                    className="px-3 py-1 bg-gray-100 dark:bg-gray-700/50 text-gray-700 dark:text-gray-300 rounded-full text-sm"
                   >
                     {tool}
                   </span>
                 ))}
               </div>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-300">
                 {typeof category.description === 'object' ? category.description[language] : category.description}
               </p>
             </div>

@@ -37,7 +37,7 @@ function PersonalProjects() {
   if (error || !projects.length) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md">
+        <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 px-4 py-3 rounded-md">
           <p>{error || 'No personal projects found'}</p>
         </div>
       </div>
@@ -51,7 +51,7 @@ function PersonalProjects() {
       <h1 className="text-3xl font-bold text-[#45B69C] mb-8">{t('projects.personal')}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {projects.map((project) => (
-          <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <div key={project.id} className="bg-white dark:bg-dark-card rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow transition-colors duration-200">
             <img
               src={project.image}
               alt={typeof project.title === 'object' ? project.title[language] : project.title}
@@ -61,7 +61,7 @@ function PersonalProjects() {
               <h2 className="text-xl font-bold mb-2 text-[#45B69C]">
                 {typeof project.title === 'object' ? project.title[language] : project.title}
               </h2>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
                 {typeof project.description === 'object' ? project.description[language] : project.description}
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
@@ -79,7 +79,7 @@ function PersonalProjects() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-gray-600 hover:text-[#45B69C] transition-colors"
+                  className="flex items-center text-gray-600 dark:text-gray-300 hover:text-[#45B69C] transition-colors"
                 >
                   <Github className="w-5 h-5 mr-1" />
                   GitHub
@@ -88,7 +88,7 @@ function PersonalProjects() {
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-gray-600 hover:text-[#45B69C] transition-colors"
+                  className="flex items-center text-gray-600 dark:text-gray-300 hover:text-[#45B69C] transition-colors"
                 >
                   <ExternalLink className="w-5 h-5 mr-1" />
                   {language === 'en' ? 'Live Demo' : 'Démo en direct'}

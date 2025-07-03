@@ -50,7 +50,7 @@ function ProfessionalProjects() {
       <h1 className="text-3xl font-bold text-purple-500 mb-8">{t('projects.professional')}</h1>
       <div className="space-y-8">
         {experiences.map((experience) => (
-          <div key={experience.id} className="bg-white rounded-lg shadow-md p-6">
+          <div key={experience.id} className="bg-white dark:bg-dark-card rounded-lg shadow-md p-6 transition-colors duration-200">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center">
                 <Building2 className="w-6 h-6 text-purple-500 mr-2" />
@@ -58,16 +58,16 @@ function ProfessionalProjects() {
                   {typeof experience.company === 'object' ? experience.company[language] : experience.company}
                 </h2>
               </div>
-              <div className="flex items-center text-gray-600">
+              <div className="flex items-center text-gray-600 dark:text-gray-300">
                 <Calendar className="w-5 h-5 mr-1" />
                 {experience.startDate} - {experience.endDate}
               </div>
             </div>
-            <p className="text-lg text-gray-700 mb-4">
+            <p className="text-lg text-gray-700 dark:text-gray-200 mb-4">
               {typeof experience.position === 'object' ? experience.position[language] : experience.position}
             </p>
             <div className="ml-4">
-              <p className="text-gray-600 mb-3">
+              <p className="text-gray-600 dark:text-gray-300 mb-3">
                 {typeof experience.description === 'object' ? experience.description[language] : experience.description}
               </p>
               
@@ -77,7 +77,7 @@ function ProfessionalProjects() {
                   {experience.technologies.map((tech: string) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm"
+                      className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-full text-sm"
                     >
                       {tech}
                     </span>

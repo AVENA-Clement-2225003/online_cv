@@ -31,10 +31,19 @@
     {
       "id": 1,
       "name": "JavaScript/TypeScript",
-      "level": "Expert",
-      "description": "Modern ES6+, TypeScript, React, Node.js",
+      "level": {
+        "en": "Expert",
+        "fr": "Expert"
+      },
+      "description": {
+        "en": "Modern ES6+, TypeScript, React, Node.js",
+        "fr": "ES6+ moderne, TypeScript, React, Node.js"
+      },
       "experience": "5+ years",
-      "projects": "Web applications, APIs, Full-stack development"
+      "projects": {
+        "en": "Web applications, APIs, Full-stack development",
+        "fr": "Applications web, APIs, Développement full-stack"
+      }
     },
     {
       "id": 2,
@@ -64,28 +73,49 @@
   "developmentTools": [
     {
       "id": 1,
-      "name": "Version Control",
+      "name": {
+        "en": "Version Control",
+        "fr": "Contrôle de Version"
+      },
       "tools": ["Git", "GitHub", "GitLab", "Bitbucket"],
       "experience": "Advanced",
-      "description": "Expert in version control workflows, branching strategies, and collaboration"
+      "description": {
+        "en": "Expert in version control workflows, branching strategies, and collaboration",
+        "fr": "Expert en flux de travail de contrôle de version, stratégies de branchement et collaboration"
+      }
     },
     {
       "id": 2,
-      "name": "CI/CD",
+      "name": {
+        "en": "CI/CD",
+        "fr": "CI/CD"
+      },
       "tools": ["Jenkins", "GitHub Actions", "GitLab CI", "CircleCI"],
       "experience": "Advanced",
-      "description": "Automated testing, deployment, and release management"
+      "description": {
+        "en": "Automated testing, deployment, and release management",
+        "fr": "Tests automatisés, déploiement et gestion des versions"
+      }
     },
     {
       "id": 3,
-      "name": "Containerization",
+      "name": {
+        "en": "Containerization",
+        "fr": "Conteneurisation"
+      },
       "tools": ["Docker", "Kubernetes", "Docker Compose"],
       "experience": "Intermediate",
-      "description": "Container orchestration and microservices deployment"
+      "description": {
+        "en": "Container orchestration and microservices deployment",
+        "fr": "Orchestration de conteneurs et déploiement de microservices"
+      }
     },
     {
       "id": 4,
-      "name": "Testing",
+      "name": {
+        "en": "Testing",
+        "fr": "Tests"
+      },
       "tools": ["Jest", "Cypress", "Selenium", "JUnit"],
       "experience": "Advanced",
       "description": "Unit testing, integration testing, and end-to-end testing"
@@ -95,28 +125,64 @@
     {
       "id": 1,
       "name": "Visual Studio Code",
-      "type": "General Purpose",
+      "type": {
+        "en": "General Purpose",
+        "fr": "Usage Général"
+      },
       "experience": "Expert",
       "features": [
-        "Custom extensions",
-        "Git integration",
-        "Debugging tools",
-        "Remote development"
+        {
+          "en": "Custom extensions",
+          "fr": "Extensions personnalisées"
+        },
+        {
+          "en": "Git integration",
+          "fr": "Intégration Git"
+        },
+        {
+          "en": "Debugging tools",
+          "fr": "Outils de débogage"
+        },
+        {
+          "en": "Remote development",
+          "fr": "Développement à distance"
+        }
       ],
-      "description": "Primary IDE for web development and general programming"
+      "description": {
+        "en": "Primary IDE for web development and general programming",
+        "fr": "IDE principal pour le développement web et la programmation générale"
+      }
     },
     {
       "id": 2,
       "name": "IntelliJ IDEA",
-      "type": "Java Development",
+      "type": {
+        "en": "Java Development",
+        "fr": "Développement Java"
+      },
       "experience": "Advanced",
       "features": [
-        "Smart code completion",
-        "Framework support",
-        "Database tools",
-        "Build tools integration"
+        {
+          "en": "Smart code completion",
+          "fr": "Complétion de code intelligente"
+        },
+        {
+          "en": "Framework support",
+          "fr": "Support des frameworks"
+        },
+        {
+          "en": "Database tools",
+          "fr": "Outils de base de données"
+        },
+        {
+          "en": "Build tools integration",
+          "fr": "Intégration des outils de build"
+        }
       ],
-      "description": "Preferred IDE for Java and Spring Boot development"
+      "description": {
+        "en": "Preferred IDE for Java and Spring Boot development",
+        "fr": "IDE préféré pour le développement Java et Spring Boot"
+      }
     },
     {
       "id": 3,
@@ -169,7 +235,7 @@
             "en": "Video editing and production",
             "fr": "Montage et production vidéo"
           },
-          "experience": "Intermediate"
+          "experience": "Advanced"
         },
         {
           "id": 3,
@@ -178,7 +244,7 @@
             "en": "Screen recording and streaming",
             "fr": "Enregistrement d'écran et streaming"
           },
-          "experience": "Advanced"
+          "experience": "Intermediate"
         }
       ]
     },
@@ -196,7 +262,7 @@
             "en": "3D modeling and animation",
             "fr": "Modélisation 3D et animation"
           },
-          "experience": "Intermediate"
+          "experience": "Advanced"
         },
         {
           "id": 2,
@@ -205,7 +271,7 @@
             "en": "Architectural visualization",
             "fr": "Visualisation architecturale"
           },
-          "experience": "Advanced"
+          "experience": "Intermediate"
         },
         {
           "id": 3,
@@ -232,7 +298,7 @@
             "en": "Document processing and presentations",
             "fr": "Traitement de documents et présentations"
           },
-          "experience": "Expert"
+          "experience": "Advanced"
         },
         {
           "id": 2,
@@ -241,7 +307,7 @@
             "en": "Note-taking and project management",
             "fr": "Prise de notes et gestion de projets"
           },
-          "experience": "Advanced"
+          "experience": "Intermediate"
         }
       ]
     },
@@ -522,15 +588,27 @@
   "certificates": [
     {
       "id": 1,
-      "name": "AWS Certified Developer",
-      "issuer": "Amazon Web Services",
+      "name": {
+        "en": "AWS Certified Developer",
+        "fr": "Développeur Certifié AWS"
+      },
+      "issuer": {
+        "en": "Amazon Web Services",
+        "fr": "Amazon Web Services"
+      },
       "date": "2022-06",
       "url": "https://aws.amazon.com/certification/certified-developer"
     },
     {
       "id": 2,
-      "name": "React Certification",
-      "issuer": "Meta",
+      "name": {
+        "en": "React Certification",
+        "fr": "Certification React"
+      },
+      "issuer": {
+        "en": "Meta",
+        "fr": "Meta"
+      },
       "date": "2021-03",
       "url": "https://reactjs.org/certification"
     }
@@ -538,8 +616,17 @@
   "contact": {
     "email": "clement@antranet.fr",
     "phone": "07 83 89 72 47",
-    "location": "Nice, PACA",
-    "availability": "Open to new opportunities",
-    "preferredContact": "email"
+    "location": {
+      "en": "Nice, PACA, France",
+      "fr": "Nice, PACA, France"
+    },
+    "availability": {
+      "en": "Open to new opportunities",
+      "fr": "Ouvert aux nouvelles opportunités"
+    },
+    "preferredContact": {
+      "en": "email",
+      "fr": "email"
+    }
   }
 }

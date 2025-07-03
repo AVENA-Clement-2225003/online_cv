@@ -9,7 +9,7 @@ const Contact = () => {
   const [profile, setProfile] = useState<Profile | null>(null)
   const [loading, setLoading] = useState<boolean>(true)
   const [error, setError] = useState<string | null>(null)
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   
   useEffect(() => {
     try {
@@ -39,10 +39,12 @@ const Contact = () => {
   const getContactInfo = () => {
     if (!contactData) return []
     
+    const { language } = useLanguage()
+    
     return [
       { icon: <Mail className="w-6 h-6" />, text: contactData.email },
       { icon: <Phone className="w-6 h-6" />, text: contactData.phone },
-      { icon: <MapPin className="w-6 h-6" />, text: contactData.location },
+      { icon: <MapPin className="w-6 h-6" />, text: typeof contactData.location === 'object' ? contactData.location[language] : contactData.location },
     ]
   }
   
@@ -96,14 +98,18 @@ const Contact = () => {
           {contactData.availability && (
             <div className="mt-6 pt-6 border-t border-gray-100 text-center">
               <p className="text-gray-600">
-                <span className="font-medium">Availability:</span> {contactData.availability}
+                <span className="font-medium">{t('contactData.availability')}:</span> {
+                  typeof contactData.availability === 'object' 
+                    ? contactData.availability[language] 
+                    : contactData.availability
+                }
               </p>
             </div>
           )}
         </div>
 
         <div className="bg-white rounded-lg shadow-md p-6 md:p-8">
-          <h2 className="text-2xl font-bold mb-6 text-center text-[#45B69C]">Connect With Me</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center text-[#45B69C]">{t('contact.connect')}</h2>
           <div className="flex flex-wrap justify-center gap-8">
             {socialLinks.map((link) => (
               <a

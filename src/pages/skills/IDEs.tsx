@@ -8,7 +8,7 @@ function IDEs() {
   const [ides, setIdes] = useState<IDE[]>([])
   const [loading, setLoading] = useState<boolean>(true)
   const [error, setError] = useState<string | null>(null)
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   
   useEffect(() => {
     try {
@@ -55,19 +55,23 @@ function IDEs() {
                   <span className="px-3 py-1 bg-[#45B69C] bg-opacity-10 text-[#45B69C] rounded-full text-sm mb-2">
                     {ide.experience}
                   </span>
-                  <span className="text-sm text-gray-500">{ide.type}</span>
+                  <span className="text-sm text-gray-500">
+                    {typeof ide.type === 'object' ? ide.type[language] : ide.type}
+                  </span>
                 </div>
               </div>
-              <p className="text-gray-600 mb-4">{ide.description}</p>
+              <p className="text-gray-600 mb-4">
+                {typeof ide.description === 'object' ? ide.description[language] : ide.description}
+              </p>
               <div className="space-y-2">
-                <h3 className="font-semibold text-gray-700">Key Features:</h3>
+                <h3 className="font-semibold text-gray-700">{t('skills.keyFeatures')}:</h3>
                 <div className="flex flex-wrap gap-2">
-                  {ide.features.map((feature) => (
+                  {ide.features.map((feature, index) => (
                     <span
-                      key={feature}
+                      key={index}
                       className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
                     >
-                      {feature}
+                      {typeof feature === 'object' ? feature[language] : feature}
                     </span>
                   ))}
                 </div>

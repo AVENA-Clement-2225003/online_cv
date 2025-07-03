@@ -8,7 +8,7 @@ function DevelopmentTools() {
   const [tools, setTools] = useState<DevelopmentTool[]>([])
   const [loading, setLoading] = useState<boolean>(true)
   const [error, setError] = useState<string | null>(null)
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   
   useEffect(() => {
     try {
@@ -50,7 +50,9 @@ function DevelopmentTools() {
           {tools.map((category) => (
             <div key={category.name} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
               <div className="flex justify-between items-start mb-4">
-                <h2 className="text-xl font-bold text-[#45B69C]">{category.name}</h2>
+                <h2 className="text-xl font-bold text-[#45B69C]">
+                  {typeof category.name === 'object' ? category.name[language] : category.name}
+                </h2>
                 <span className="px-3 py-1 bg-[#45B69C] bg-opacity-10 text-[#45B69C] rounded-full text-sm">
                   {category.experience}
                 </span>
@@ -65,7 +67,9 @@ function DevelopmentTools() {
                   </span>
                 ))}
               </div>
-              <p className="text-gray-600">{category.description}</p>
+              <p className="text-gray-600">
+                {typeof category.description === 'object' ? category.description[language] : category.description}
+              </p>
             </div>
           ))}
         </div>

@@ -8,7 +8,7 @@ function ProgrammingLanguages() {
   const [languages, setLanguages] = useState<ProgrammingLanguage[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
-  const { t } = useLanguage();
+  const { t, language: currentLanguage } = useLanguage();
   
   useEffect(() => {
     try {
@@ -47,18 +47,20 @@ function ProgrammingLanguages() {
       
       {!loading && !error && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {languages.map((language) => (
-            <div key={language.name} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+          {languages.map((lang) => (
+            <div key={lang.name} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
               <div className="flex justify-between items-start mb-4">
-                <h2 className="text-xl font-bold text-[#45B69C]">{language.name}</h2>
+                <h2 className="text-xl font-bold text-[#45B69C]">{lang.name}</h2>
                 <span className="px-3 py-1 bg-[#45B69C] bg-opacity-10 text-[#45B69C] rounded-full text-sm">
-                  {language.level}
+                  {typeof lang.level === 'object' ? lang.level[currentLanguage] : lang.level}
                 </span>
               </div>
-              <p className="text-gray-600 mb-4">{language.description}</p>
+              <p className="text-gray-600 mb-4">
+                {typeof lang.description === 'object' ? lang.description[currentLanguage] : lang.description}
+              </p>
               <div className="flex justify-between text-sm text-gray-500">
-                <span>{t('label.experience')}: {language.experience}</span>
-                <span>{t('label.projects')}: {language.projects}</span>
+                <span>{t('label.experience')}: {lang.experience}</span>
+                <span>{t('label.projects')}: {typeof lang.projects === 'object' ? lang.projects[currentLanguage] : lang.projects}</span>
               </div>
             </div>
           ))}

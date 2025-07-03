@@ -52,6 +52,11 @@ const translations: Record<Language, Record<string, string>> = {
     'home.education': 'Education',
     'home.education.date': '{0} - {1}',
     'home.education.present': 'Present',
+    
+    // Contact page
+    'contact.connect': 'Connect With Me',
+    'contactData.availability': 'Availability',
+    'skills.keyFeatures': 'Key Features',
   },
   fr: {
     // General
@@ -90,6 +95,11 @@ const translations: Record<Language, Record<string, string>> = {
     'home.education': 'Formation',
     'home.education.date': '{0} - {1}',
     'home.education.present': 'Présent',
+    
+    // Contact page
+    'contact.connect': 'Me Contacter',
+    'contactData.availability': 'Disponibilité',
+    'skills.keyFeatures': 'Fonctionnalités Clés',
   },
 };
 

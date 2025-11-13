@@ -209,6 +209,100 @@
         "Gradle support"
       ],
       "description": "Complete IDE for Android app development"
+    },
+    {
+      "id": 5,
+      "name": "Visual Studio 2022",
+      "type": {
+        "en": "General Purpose",
+        "fr": "Usage Général"
+      },
+      "experience": "Intermediate",
+      "features": [
+        {
+          "en": "Custom extensions",
+          "fr": "Extensions personnalisées"
+        },
+        {
+          "en": "Git integration",
+          "fr": "Intégration Git"
+        },
+        {
+          "en": "Debugging tools",
+          "fr": "Outils de débogage"
+        },
+        {
+          "en": "Remote development",
+          "fr": "Développement à distance"
+        }
+      ],
+      "description": {
+        "en": "Primary IDE for web development and general programming",
+        "fr": "IDE principal pour le développement web et la programmation générale"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Looping",
+      "type": {
+        "en": "Database creation",
+        "fr": "Création de base de données"
+      },
+      "experience": "Advanced",
+      "features": [
+        {
+          "en": "MLD Generation",
+          "fr": "Génération du MLD"
+        },
+        {
+          "en": "E/A schema",
+          "fr": "Schéma E/A"
+        },
+        {
+          "en": "SQL generation",
+          "fr": "Génération SQL"
+        },
+        {
+          "en": "Inheritance",
+          "fr": "Héritage"
+        }
+      ],
+      "description": {
+        "en": "Software that simplifies the creation of 3NF databases by designing them in Entity/Relationship format, which is then directly translated to generate the MLD and SQL scripts for the relationships.",
+        "fr": "Logiciel facilitant la création de bases de données en 3NF en passant par la conception en format Entité / Association qui sera directement traduit pour donner le script MLD et SQL pour les relations"
+      }
+    }
+    ,
+    {
+      "id": 7,
+      "name": "Git",
+      "type": {
+        "en": "Version control",
+        "fr": "Contrôle de version"
+      },
+      "experience": "Intermediate",
+      "features": [
+        {
+          "en": "Branching",
+          "fr": "Branchement"
+        },
+        {
+          "en": "Merge",
+          "fr": "Fusion"
+        },
+        {
+          "en": "Rebase",
+          "fr": "Rebase"
+        },
+        {
+          "en": "Remote",
+          "fr": "Remote"
+        }
+      ],
+      "description": {
+        "en": "To be completed",
+        "fr": "A compléter"
+      }
     }
   ],
   "software": [
@@ -430,14 +524,31 @@
         "fr": "Polytech Nice Sophia"
       },
       "degree": {
-        "en": "Engineer in Computer Science",
-        "fr": "Ingénieur en Informatique"
+        "en": "Sustainable Software Engineer (SSE)",
+        "fr": "Ingénieur en Informatique (SSE)"
       },
       "startDate": "09/2025",
       "endDate": "Present",
       "description": {
         "en": "Ongoing specialization in artificial intelligence applications for web development.",
         "fr": "Spécialisation en cours sur les applications d'intelligence artificielle pour le développement web."
+      }
+    },
+    {
+      "id": 3,
+      "institution": {
+        "en": "Lycée Ste-Marie Aubagne",
+        "fr": "Lycée Ste-Marie Aubagne"
+      },
+      "degree": {
+        "en": "Baccalaureate Spé NSI/SVT",
+        "fr": "Baccalauréat Spé NSI/SVT"
+      },
+      "startDate": "09/2022",
+      "endDate": "06/2025",
+      "description": {
+        "en": "Baccalaureate Spé NSI/SVT",
+        "fr": "Baccalauréat Spé NSI/SVT"
       }
     }
   ],
@@ -496,31 +607,31 @@
       {
         "id": 1,
         "title": {
-          "en": "Task Management App",
-          "fr": "Application de Gestion des Tâches"
+          "en": "ChiefPlanner",
+          "fr": "ChiefPlanner"
         },
         "description": {
-          "en": "A React-based task management application with real-time updates and collaborative features.",
-          "fr": "Une application de gestion des tâches basée sur React avec mises à jour en temps réel et fonctionnalités collaboratives."
+          "en": "A planning application for the week with list of ingredients generated based on this planning. Propose a playlist system to alternate between several tastes or type of cuisine.",
+          "fr": "Une application de planification des repas pour la semaine avec liste de courses généré basé sur ce planning. Propose un systeme de playlist pour alterner entre plusieurs envie ou type de cuisine"
         },
-        "technologies": ["React", "Firebase", "Tailwind CSS"],
-        "github": "https://github.com/yourusername/task-app",
-        "demo": "https://task-app-demo.com",
+        "technologies": ["Laravel", "MySQL", "CSS", "JS"],
+        "github": "https://github.com/yourusername/chiefplanner",
+        "demo": "https://chiefplanner.antranet.fr",
         "image": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&h=400"
       },
       {
         "id": 2,
         "title": {
-          "en": "Weather Dashboard",
-          "fr": "Tableau de Bord Météo"
+          "en": "KoDIY",
+          "fr": "KoDIY"
         },
         "description": {
-          "en": "Real-time weather monitoring dashboard with interactive maps and forecasting.",
-          "fr": "Tableau de bord de surveillance météorologique en temps réel avec cartes interactives et prévisions."
+          "en": "A web overlay for an FTP to consult information about movies (Netflix at home)",
+          "fr": "Une surcouche web d'un FTP pour consulter des informations sur des films (Netflix maison)"
         },
-        "technologies": ["Vue.js", "OpenWeather API", "D3.js"],
-        "github": "https://github.com/yourusername/weather-dashboard",
-        "demo": "https://weather-dashboard-demo.com",
+        "technologies": ["Laravel", "MySQL", "CSS", "JS"],
+        "github": "https://github.com/yourusername/kodiy",
+        "demo": "https://kodiy.antranet.fr",
         "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&h=400"
       }
     ],
@@ -561,7 +672,7 @@
         },
         "year": "2025",
         "technologies": [".NET MAUI", "SQLite", "Figma"],
-        "type": "Research",
+        "type": "Course Project",
         "gitHub": "https://github.com/yourusername/task-app"
       },
       {
@@ -580,6 +691,44 @@
         },
         "year": "2022",
         "technologies": ["SQL", "PostgreSQL", "Python"],
+        "type": "Research",
+        "gitHub": "https://github.com/yourusername/database-optimization"
+      },
+      {
+        "id": 3,
+        "title": {
+          "en": "Poker Hand Comparator",
+          "fr": "Comparateur de mains de poker"
+        },
+        "description": {
+          "en": "Project for PS5 Polytech to introduce to slice programming",
+          "fr": "Projet de PS5 Polytech pour introduire à la programmation par slice"
+        },
+        "institution": {
+          "en": "Polytech Nice Sophia",
+          "fr": "Polytech Nice Sophia"
+        },
+        "year": "2025",
+        "technologies": ["Java"],
+        "type": "Course Project",
+        "gitHub": "https://github.com/yourusername/database-optimization"
+      },
+      {
+        "id": 4,
+        "title": {
+          "en": "Holo",
+          "fr": "Holo"
+        },
+        "description": {
+          "en": "Social network for learning PHP programming, basic security principles, web development, and database connection",
+          "fr": "Réseaux social pour apprhéander la programmation en php, les principes de bases de sécurité, de développement web et de connection aux bases de données"
+        },
+        "institution": {
+          "en": "University of Technology",
+          "fr": "BUT Informatique"
+        },
+        "year": "2022",
+        "technologies": ["PHP", "MySQL", "CSS"],
         "type": "Course Project",
         "gitHub": "https://github.com/yourusername/database-optimization"
       }
@@ -621,8 +770,8 @@
       "fr": "Nice, PACA, France"
     },
     "availability": {
-      "en": "Open to new opportunities",
-      "fr": "Ouvert aux nouvelles opportunités"
+      "en": "Holds a position as a Full Stack Software Architect Engineer",
+      "fr": "Occupe un poste d'ingénieur Full Stack Architecte Logiciel"
     },
     "preferredContact": {
       "en": "email",

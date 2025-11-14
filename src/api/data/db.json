@@ -497,6 +497,70 @@
           "Optimisation des requêtes de base de données"
         ]
       }
+    },
+    {
+      "id": 3,
+      "company": {
+        "en": "Mobiwork-etl",
+        "fr": "Mobiwork-etl"
+      },
+      "position": {
+        "en": "Ingenior",
+        "fr": "Ingénieur Alternant"
+      },
+      "startDate": "09/2025",
+      "endDate": "",
+      "description": {
+        "en": "Participation to the development of the Mobiwork-etl application",
+        "fr": "Participation à l'ajout de foncitonnalité dans ce projet"
+      },
+      "technologies": ["Python", "AWS", "Docker"],
+      "github": "https://github.com/digital-innovations/client-portal",
+      "demo": "https://client-portal.digital-innovations.com",
+      "achievements": {
+        "en": [
+          "Created responsive designs for 20+ clients",
+          "Integrated payment processing systems",
+          "Optimized database queries"
+        ],
+        "fr": [
+          "Création de designs responsives pour plus de 20 clients",
+          "Intégration de systèmes de traitement de paiement",
+          "Optimisation des requêtes de base de données"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "company": {
+        "en": "Transcan Dashboard",
+        "fr": "Transcan Dashboard"
+      },
+      "position": {
+        "en": "Ingenior",
+        "fr": "Ingénieur Alternant"
+      },
+      "startDate": "09/2025",
+      "endDate": "",
+      "description": {
+        "en": "Participation to the development of the Transcan Dashboard application",
+        "fr": "Participation à l'ajout de foncitonnalité dans ce projet"
+      },
+      "technologies": ["React", "AWS", "NextJS", "Clerk", "Ant Design"],
+      "github": "https://github.com/digital-innovations/client-portal",
+      "demo": "https://client-portal.digital-innovations.com",
+      "achievements": {
+        "en": [
+          "Created responsive designs for 20+ clients",
+          "Integrated payment processing systems",
+          "Optimized database queries"
+        ],
+        "fr": [
+          "Création de designs responsives pour plus de 20 clients",
+          "Intégration de systèmes de traitement de paiement",
+          "Optimisation des requêtes de base de données"
+        ]
+      }
     }
   ],
   "education": [

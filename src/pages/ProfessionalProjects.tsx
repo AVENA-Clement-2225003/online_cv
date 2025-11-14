@@ -9,11 +9,49 @@ function ProfessionalProjects() {
   const [error, setError] = useState<string | null>(null)
   const { language } = useLanguage()
   
+  
+  const parseMonthYear = (value?: string, kind: 'start' | 'end' = 'start'): number => {
+    if (!value) return kind === 'end' ? Number.POSITIVE_INFINITY : Number.NEGATIVE_INFINITY
+    const v = value.trim().toLowerCase()
+    if (v === 'present' || v === 'now') return Number.POSITIVE_INFINITY
+    const parts = v.split('/')
+    if (parts.length !== 2) return Number.NEGATIVE_INFINITY
+    const mm = parseInt(parts[0], 10)
+    const yyyy = parseInt(parts[1], 10)
+    if (!mm || !yyyy) return Number.NEGATIVE_INFINITY
+    
+    return (kind === 'end'
+      ? new Date(yyyy, mm, 0)
+      : new Date(yyyy, mm - 1, 1)
+    ).getTime()
+  }
+  const isOngoing = (value?: string): boolean => {
+    if (!value) return true
+    const v = value.trim().toLowerCase()
+    return v === '' || v === 'present' || v === 'now'
+  }
+  const formatEndDate = (value?: string, lang?: string): string => {
+    if (isOngoing(value)) return lang === 'fr' ? 'Aujourd’hui' : 'Today'
+    return value as string
+  }
+  
   useEffect(() => {
     try {
       const experienceData = dataService.getSection('experience')
       if (experienceData) {
-        setExperiences(experienceData)
+        const sorted = [...(experienceData as any[])].sort((a: any, b: any) => {
+          const startA = parseMonthYear(a.startDate, 'start')
+          const startB = parseMonthYear(b.startDate, 'start')
+          if (startA !== startB) return startB - startA
+          const ongoingA = isOngoing(a.endDate)
+          const ongoingB = isOngoing(b.endDate)
+          if (ongoingA !== ongoingB) return ongoingA ? -1 : 1
+          const endA = parseMonthYear(a.endDate, 'end')
+          const endB = parseMonthYear(b.endDate, 'end')
+          if (endA !== endB) return endB - endA
+          return 0
+        })
+        setExperiences(sorted)
       } else {
         setError('Failed to load experience data')
       }
@@ -48,7 +86,7 @@ function ProfessionalProjects() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold text-purple-500 mb-8">{t('projects.professional')}</h1>
-      <div className="space-y-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {experiences.map((experience) => (
           <div key={experience.id} className="bg-white dark:bg-dark-card rounded-lg shadow-md p-6 transition-colors duration-200">
             <div className="flex items-center justify-between mb-4">
@@ -60,7 +98,7 @@ function ProfessionalProjects() {
               </div>
               <div className="flex items-center text-gray-600 dark:text-gray-300">
                 <Calendar className="w-5 h-5 mr-1" />
-                {experience.startDate} - {experience.endDate}
+                {experience.startDate} - {formatEndDate(experience.endDate, language)}
               </div>
             </div>
             <p className="text-lg text-gray-700 dark:text-gray-200 mb-4">
